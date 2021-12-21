@@ -1,0 +1,16 @@
+server:
+  port: 8000
+
+
+logging:
+  level:
+    root: INFO
+    com.example.web_sample_01: INFO
+  file:
+    name: "logs/springboot.log"
+  pattern:
+    file: "[%d{HH:mm:ss.SSS}][%-5level][%logger.%method:line%line] - %msg%n"
+  logback:
+    rollingpolicy:
+      max-history: 30
+      max-size: 500MB
